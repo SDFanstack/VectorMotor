@@ -4,75 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VectorMotor</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial;
-background:#0b0b0b;
-color:white;
-}
-
-header{
-background:#d40000;
-padding:20px;
-text-align:center;
-font-size:26px;
-font-weight:bold;
-}
-
-nav{
-display:flex;
-justify-content:center;
-gap:15px;
-background:#151515;
-padding:12px;
-flex-wrap:wrap;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-}
-
-.card{
-background:#1a1a1a;
-padding:15px;
-border-radius:12px;
-border:1px solid #2a2a2a;
-transition:0.2s;
-cursor:pointer;
-}
-
-.card:hover{
-transform:scale(1.03);
-border-color:#d40000;
-}
-
-.card h3{
-color:#d40000;
-margin-top:0;
-}
-
-footer{
-text-align:center;
-padding:20px;
-color:#777;
-margin-top:30px;
-border-top:1px solid #222;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -82,40 +14,33 @@ border-top:1px solid #222;
 </header>
 
 <nav>
-<a href="#">Inicio</a>
-<a href="#">F1</a>
-<a href="#">MotoGP</a>
-<a href="#">NASCAR</a>
-<a href="#">Calendario</a>
-<a href="#">Opinión</a>
+<a href="index.html">Inicio</a>
+<a href="f1.html">F1</a>
+<a href="motogp.html">MotoGP</a>
+<a href="nascar.html">NASCAR</a>
 </nav>
 
 <div class="container">
 
-<div class="card">
+<a class="card" href="f1.html">
 <h3>F1</h3>
-<p>Noticias, análisis y resultados de Fórmula 1.</p>
-</div>
+<p>Últimas noticias de Fórmula 1, análisis y resultados.</p>
+</a>
 
-<div class="card">
+<a class="card" href="motogp.html">
 <h3>MotoGP</h3>
-<p>Últimas carreras, pilotos y clasificación del mundial.</p>
-</div>
+<p>Todo sobre el mundial de motociclismo.</p>
+</a>
 
-<div class="card">
+<a class="card" href="nascar.html">
 <h3>NASCAR</h3>
-<p>Todo sobre la NASCAR Cup Series.</p>
-</div>
-
-<div class="card">
-<h3>Última noticia</h3>
-<p>Tu web ya está lista para ampliarse a nivel profesional.</p>
-</div>
+<p>Carreras ovales, incidentes y clasificación.</p>
+</a>
 
 </div>
 
 <footer>
-© 2026 VectorMotor - Motorsport news
+© 2026 VectorMotor
 </footer>
 
 </body>
